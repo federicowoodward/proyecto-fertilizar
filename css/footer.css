@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--color-gray);
-    height: 120px;
+    min-height: 120px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -22,9 +22,28 @@
     font: 0.9em sans-serif;
     padding: 5px 0 0 0;
     color: white;
-
 }
 .footer .footerItem img {
     height: 25px;
-    padding: 0 10px 0 0;
+    padding: 0 5px 0 0;
+}
+@media (max-width: 1025px) {
+    .footer img {
+        height: 35px;
+        margin-left: 20px;
+    }
+    .footer .footerItem p {
+        font-size: 1.5vh;
+    }
+}
+@media (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer .logoFooter {
+        margin: 20px 0;
+    }
+    .footer .footerItem {
+        margin: 10px 0 10px 0;
+    }
 }
