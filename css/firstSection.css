@@ -1,0 +1,26 @@
+.firstSection {
+    text-align: center;
+    padding: 40px 35px 20px 35px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.firstSection h2 {
+    padding: 20px;
+    color: var(--color-green);
+    font-size: 30px;
+}
+.firstSection p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 0 2%;
+}
+@media (max-width: 728px) {
+    .firstSection h2 {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .firstSection p {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+        padding: 0 .5%;
+    }
+}

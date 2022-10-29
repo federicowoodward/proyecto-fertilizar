@@ -1,0 +1,29 @@
+/* stlye sheets */
+@import url("./css/social.css");
+@import url("./css/navBar.css");
+@import url("./css/firstSection.css");
+@import url("./css/imgStart.css");
+@import url("./css/cardsGroup.css");
+@import url("./css/cardsGroup2.css");
+@import url("./css/contact.css");
+@import url("./css/footer.css");
+@import url("./css/lastSection.css");
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+/* to all */
+* {
+    padding: 0;
+    margin: 0;
+    --color-green: rgb(128, 190, 88);
+    --color-gray: rgb(73, 73, 73);
+}
+body {
+    overflow-x: hidden;
+}
+/* @media (max-width: 800px) {
+    * {
+        flex-direction: column;
+    }
+} */

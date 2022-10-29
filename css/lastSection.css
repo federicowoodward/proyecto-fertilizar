@@ -1,0 +1,26 @@
+.lastSection {
+    background-color: var(--color-green);
+    height: 35vh;
+    text-align: center;
+    width: 100%;
+}
+.lastSection h2 {
+    padding-top: 40px;
+    /* margin: 0 1%; */
+    color: white;
+    letter-spacing: 0.2px;
+    font-size: 25px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.lastSection button {
+    margin-top: 20px;
+    border: 0;
+    padding: 6px 25px;
+    border-radius:  18px;
+    color: var(--color-green);
+}
+@media (max-width: 767px) {
+    .lastSection h2{
+        font-size: 20px;
+    }
+}

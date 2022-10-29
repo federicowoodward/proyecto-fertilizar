@@ -1,0 +1,31 @@
+.footer {
+    background-color: var(--color-gray);
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+.footer img {
+    height: 50px;
+    margin-left: 60px;
+}
+.footer .footerItems {
+    display: flex;
+}
+.footer .footerItem {
+    display: flex;
+}
+.footer .footerItem p {
+    text-align: start;
+    max-width: 200px;
+    font: 0.9em sans-serif;
+    padding: 5px 0 0 0;
+    color: white;
+
+}
+.footer .footerItem img {
+    height: 25px;
+    padding: 0 10px 0 0;
+}

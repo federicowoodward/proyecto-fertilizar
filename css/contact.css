@@ -1,0 +1,84 @@
+.contact {
+    background-image: url("../img/fondocontact.png");
+    background-position: center center;
+    background-repeat : no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.contact .divContact {
+    min-width: 70%;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 0 20px 0;
+    columns: 2 auto;
+}
+.contact .divContact h2 {
+    margin: 40px 0 0 0;
+    color: var(--color-green);
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+.contact .divContact input {
+    margin: 20px 25px 0 25px; 
+}
+.contact .containerButton {
+    display: inline-block;
+    width: 371px;
+}
+.contact button {
+    background-color: var(--color-green);
+    color: white;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 15px;
+}
+/* From uiverse.io by @ercnersoy */
+.contact .input {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    transition: 0.3s;
+    min-width: 290px;
+   }
+   
+   .contact .input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+    inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+
+@media (max-width: 1000px) {
+    .contact button {
+        display: block;
+        margin: 20px auto;
+    }
+    .contact .divContact h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+}
+@media (max-width: 500px) {
+    .contact {
+        padding: 25px;
+    }
+    .contact .input {
+        min-width: 0px;
+        width: 50%;
+    }
+    .contact .containerButton {
+        width: 0px;
+        width: 50%;
+    }
+}

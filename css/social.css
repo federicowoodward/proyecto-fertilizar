@@ -1,0 +1,43 @@
+.social {
+    width: 100%;
+    background-color: var(--color-gray);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 200;
+}
+
+.social Img {
+    height: 4.258943781942079vh;
+    padding: 4px 6px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 2px 10px 1px 0;
+}
+
+.social .magnifyingGlass {
+    padding: 4px 75px 4px 6px;
+    border-radius: 30px;
+}
+
+.social .divMagnifyingGlass {
+    position: relative;
+}
+
+.social p {
+    position: absolute;
+    top: 9px;
+    left: 40px;
+    color: #fff;
+    font-size: 14px;
+}
+
+@media (max-width: 400px) {
+    .social {
+        width: 100%;
+    }
+    .social Img {
+        height: 2.5vh;
+        margin-right: 0px;
+    }
+}

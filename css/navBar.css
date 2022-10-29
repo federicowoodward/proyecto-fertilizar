@@ -1,0 +1,124 @@
+.navBar {
+    background-color:rgb(54, 54, 56);
+    height: 65px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.navBar img {
+    height: 40px;
+    position: absolute;
+    left: 40px;
+    top: 12px;
+}
+.navBar img:hover {
+    transform: scale(1.04);
+}
+.navBar ul {
+    display: flex;
+}
+.navBar ul li {
+    margin-left: 20px;
+    list-style: none;
+}
+.navBar ul li a {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif; 
+    text-decoration: none; 
+    letter-spacing: 1px;
+}
+.navBar ul li:hover {
+    transform: scaleX(1.06);
+}
+.navBar ul li:hover a {
+    color: var(--color-green);
+}
+.navBar ul li #contact {
+    background-color: var(--color-green);
+    padding: 3px 15px;
+    border-radius: 18px;
+}
+.navBar ul li:hover #contact {
+    color: white;
+}
+.navBar p {
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+}
+.navBar button {
+    display: none;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 34px;
+    line-height: 60px;
+    z-index: 200;
+}
+.navBar .hamburger_fixed {
+    position: fixed;
+}
+@media (max-width: 950px) {
+    .navBar img {
+        transform: scale(0.9);
+        left: 20px;
+    }
+    .navBar ul li {
+        margin-left: 12px;
+    }
+    .navBar ul li a{
+        letter-spacing: 0.2px;
+    }
+}
+@media (max-width: 800px) {
+    .navBar {
+        align-items: flex-end;
+    }
+    .navBarUl {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        text-align: center;
+        background-color: rgba(73, 73, 73, 0.909);
+        width: 100%;
+        height: 100%; 
+        margin: auto;  
+        padding: 60px 0;     
+        left: 10000px;
+        transition: left 3s;
+        z-index: 100;
+        /* sirve para que no quede feo la salida de la nav */
+        top: 0;
+        right: 0;
+    }
+    .navBar ul li {
+        margin-top: 20px;
+    }
+    .navBar ul li a{
+        font-size: 20px;
+    }
+    .navBar button {
+        display: block;
+        padding-right: 30px;
+    }
+    .navBarUl_visibility { 
+        top: 0;
+        right: 0;
+        left: 0;
+        transition: left 1s;
+    }
+    .navBarUl_visibilityDown {
+        top: 35px;
+        right: 0;
+        transition: left 1s;
+     }
+}
+@media (max-width: 425px) {
+    .navBar img {
+        transform: scale(0.7);
+        left: 0px;
+    }
+}

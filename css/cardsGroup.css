@@ -1,0 +1,118 @@
+.cardsGroup {
+    padding: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardsGroup .card {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5vh 0;
+    height: 350px;
+    width: 90%;
+    border-radius:70px;
+    background-color: #fff;
+    box-shadow:
+    2.2px 2.1px 0.9px rgba(0, 0, 0, 0.04),
+    5.2px 4.8px 2.2px rgba(0, 0, 0, 0.03),
+    9.4px 8.7px 3.9px rgba(0, 0, 0, 0.025),
+    15.6px 14.5px 6.4px rgba(0, 0, 0, 0.022),
+    25.7px 23.8px 10.6px rgba(0, 0, 0, 0.018),
+    44.8px 41.6px 18.5px rgba(0, 0, 0, 0.015),
+    97px 90px 40px rgba(0, 0, 0, 0.01)
+  ;
+}
+.cardsGroup .text {
+    margin: 18px 0 14px 30px;
+}
+.cardsGroup h2 {
+    color: var(--color-green);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.cardsGroup p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+}
+.cardsGroup button {
+    background-color: var(--color-green);
+    color: white;
+    padding: 4px 10px;
+    margin: 8px 0 0 6px;
+    border: 0;
+    border-radius: 20px;
+}
+.cardsGroup .card:hover button {
+    transform: scale(1.12);
+}
+.cardsGroup .imgPc{ 
+    width: 70%;
+}
+.cardsGroup .card2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.cardsGroup .card2 .imgPc{ 
+    border-radius: 35px 0 0 35px;
+}
+.cardsGroup .card .text {
+    padding: 20px 1%;
+}
+.cardsGroup .card .text p {
+    font-size: 12px;
+}
+.cardsGroup #btnBottom {
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+}
+.cardsGroup #btnBottom:hover {
+    transform: scale(1.1);
+}
+.cardsGroup .imgMobile {
+    display: none;
+}
+@media (max-width: 900px) {
+    .cardsGroup .card {
+        width: 100%;
+        background-color: #fff;
+        border-radius:0px;
+        box-shadow:
+        0px 0px 0px rgba(0, 0, 0, 0.04),
+        0px 0px 0px rgba(0, 0, 0, 0.03),
+        0px 0px 0px rgba(0, 0, 0, 0.025),
+        0px 0px 0px rgba(0, 0, 0, 0.022),
+        0px 0px 0px rgba(0, 0, 0, 0.018),
+        0px 0px 0px rgba(0, 0, 0, 0.015),
+        0px 0px 0px rgba(0, 0, 0, 0.01)
+        ; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    } 
+    .cardsGroup .card .imgPc {
+        display: none;
+    }
+    .cardsGroup .imgMobile {
+        display: inline;
+        width: 90%;
+        text-align: center;
+    }
+    .cardsGroup .card .text{
+        text-align: center;
+        padding: 60px 1% 0 1%;
+        margin: 0;
+    }
+    .cardsGroup .text h2,
+    .cardsGroup .text p {
+        font-size: 15px;
+        padding: 20px 0 0 0;
+    }
+    .cardsGroup #btnBottom {
+        margin: 80px 0 10px 0;
+    }
+}
