@@ -10,38 +10,36 @@
     letter-spacing: 2px;
     padding: 10px 0 0 0;
 }
-.cardsGroup2 .cardSection1and2 {
-    padding: 20px;
-}
 .cardsGroup2 .cardSection1,
 .cardsGroup2 .cardSection2 {
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 120px;
+    margin: 20px auto;
     text-align: center;
+    max-width: 100vh;
 }
 .cardsGroup2 .cardSection1 {
-    /* flex-wrap: wrap; */
     flex: 50%;
 }
 .cardsGroup2 .circleCard{
     margin: 10px 10px;
 }
-.cardsGroup2 .circleCard img{
-    border-radius: 50%;
-    height: 22vh;
+.cardsGroup2 img {
+    min-height: 18vh;
+    max-height: 22vh;
 }
 .cardsGroup2 .circleCard p {
     text-align: center;
     font-family: 'Noto Sans JP', sans-serif;
     letter-spacing: 0.3px;
     font-size: 15px;
-    margin: 0 15px 0 15px;
+    max-width: 250px;
 }
 .cardsGroup2 .cardSection1 .circleCard p {
     text-align: center;
     font-size: 13px;
     width: 190px;
+    margin: auto;
 }
 .fixedImg {
     background-image: url(../img/fixedImg.png);
@@ -50,7 +48,19 @@
     height: 9em;
     width: 100%;
   }
-
+  @media (min-width: 1800px) {
+    .fixedImg {
+        height: 14em;
+      }
+  }
+@media (max-width: 1020px) {
+    .cardsGroup2 .cardSection1 .circleCard{
+        width: 45%;
+    }
+    .cardsGroup2 .cardSection1 .circleCard p {
+        max-width: 100px;
+    }
+}
 @media (max-width: 800px) {
     .cardsGroup2 .cardSection1and2 {
     padding: 0;
@@ -64,7 +74,10 @@
         display: block;
         max-width: 300px;
     } 
-
+    .cardsGroup2 img {
+        min-height: 15vh;
+        max-height: 18vh;
+    }
 
 }
 @media (max-width: 1000px) {    

@@ -7,9 +7,10 @@
 .cardsGroup .card {
     display: flex;
     justify-content: space-between;
-    margin: 2.5vh 0;
+    justify-content: center;
+    margin: 2.5vh 1em;
     height: 350px;
-    width: 90%;
+    max-width: 1200px;
     border-radius:70px;
     background-color: #fff;
     box-shadow:
@@ -75,7 +76,7 @@
 .cardsGroup .imgMobile {
     display: none;
 }
-@media (max-width: 900px) {
+@media (max-width: 1020px) {
     .cardsGroup .card {
         width: 100%;
         background-color: #fff;
