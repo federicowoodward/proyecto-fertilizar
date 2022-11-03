@@ -17,7 +17,7 @@
     letter-spacing: 1px;
     padding: 0 2%;
 }
-@media (max-width: 728px) {
+@media (max-width: 728px) {  
     .firstSection h2 {
         padding: 10px;
         font-size: 20px;

@@ -1,83 +1,148 @@
 .contact {
-    background-image: url("../img/fondocontact.png");
-    background-position: center center;
-    background-repeat : no-repeat;
-    background-size: cover;
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-image: url("../img/fondocontact.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .contact .divContact {
-    border-radius: 30px 30px 30px 30px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 0 40px 0;
-    max-width: 40vh;
-    margin: 40px;
+  border-radius: 30px 30px 30px 30px;
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 0 40px 0;
+  margin: auto;
 }
+
 .contact .divContact h2 {
-    margin: 40px 0 0 0;
-    color: var(--color-green);
-    font-family: 'Noto Sans JP', sans-serif;
-    letter-spacing: 2px;
-    font-size: 30px;
+  margin: 40px 0 20px 0;
+  color: var(--color-green);
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 2px;
+  font-size: 30px;
 }
-.contact .divContact input {
-    margin: 20px 25px 0 25px; 
+
+.inputsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "input1 input2"
+    "input3 input4"
+    "input5 input6"
+    "input7 button";
+  justify-items: center;
+  align-items: center;
+  margin: 0 50px;
 }
+
+.input1 {
+  grid-area: input1;
+}
+
+.input2 {
+  grid-area: input2;
+}
+
+.input3 {
+  grid-area: input3;
+}
+
+.input4 {
+  grid-area: input4;
+}
+
+.input5 {
+  grid-area: input5;
+}
+
+.input6 {
+  grid-area: input6;
+}
+
+.input7 {
+  grid-area: input7;
+}
+
+.button {
+  grid-area: button;
+}
+
+
 .contact button {
-    background-color: var(--color-green);
-    color: white;
-    padding: 8px 16px;
-    margin: 20px auto;
-    border: 0;
-    border-radius: 15px;
+  background-color: var(--color-green);
+  color: white;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 15px;
+  margin: auto;
 }
+
 /* From uiverse.io by @ercnersoy */
 .contact .input {
-    border: none;
-    padding: 1rem;
-    border-radius: 1rem;
-    background: #e8e8e8;
-    transition: 0.3s;
-    /* max-width: 290px; */
-   }
-   
-   .contact .input:focus {
-    outline-color: #e8e8e8;
-    background: #e8e8e8;
-    box-shadow: inset 20px 20px 60px #c5c5c5,
-    inset -20px -20px 60px #ffffff;
-    transition: 0.3s;
-   }
+  border: 2px solid var(--color-green);
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #fff;
+  transition: 0.3s;
+  margin: 5px 15px;
+}
+.contact .input:hover {
+  background: #e8e8e8;
+  transition: 0.3s;
+}
+.contact .input:focus {
+  background: #e8e8e8;
+  transition: 0.3s;
+}
 
 @media (max-width: 1000px) {
-    .contact .divContact h2 {
-        font-size: 25px;
-        text-align: center;
-    }
+  .contact .divContact h2 {
+    font-size: 25px;
+    text-align: center;
+  }
 }
-@media (max-width: 800px) {
-    .contact .divContact {
-        margin: 10px;
-    }
+
+
+@media (max-width: 600px) {
+  .inputsContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+  }
+  .contact button {
+    margin-top: 10px;
+  }
+  .contact .divContact h2 {
+    font-size: 20px;
+    width: 50%;
+    margin: 15px auto;
+  }
+  .contact {
+    padding: 40px 0;
+  }
 }
-@media (max-width: 530px) {
-    .contact {
-        padding: 25px;
-    }
-    .contact .input {
-        width: 70%;
-    }
-    .contact .containerButton {
-        width: 0px;
-        width: 50%;
-    }
-    .contact .divContact {
-        margin: 1px;
-    }
+  
+@media (max-width: 320px) {
+  .divContact {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+    margin: 0 0;
+  }
+  .contact {
+    padding: 30px 0;
+  }
+  .divContact input {
+    max-width: 100%;
+  }
 }
