@@ -1,14 +1,21 @@
 .social {
-    width: 100%;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.socialFlex {
+    padding: 0 4
+    00px;
     background-color: var(--color-gray);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    z-index: 200;
+    /* z-index: 200; */
 }
 
 .social Img {
-    height: 4.258943781942079vh;
+    height: 25px;
     padding: 4px 6px;
     border: 1px solid white;
     border-radius: 50%;
