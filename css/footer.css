@@ -1,10 +1,16 @@
 .footer {
     background-color: var(--color-gray);
-    min-height: 120px;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 120px;
+}
+.divFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    width: 100%;
 }
 .footer img {
     height: 50px;

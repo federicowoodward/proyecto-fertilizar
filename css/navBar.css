@@ -1,3 +1,10 @@
+.divNavBar {
+    background-color:rgb(54, 54, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+}
 .navBar {
     background-color:rgb(54, 54, 56);
     height: 65px;

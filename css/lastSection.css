@@ -3,10 +3,10 @@
     height: 35vh;
     text-align: center;
     width: 100%;
+    margin-top: 20px;
 }
 .lastSection h2 {
     padding-top: 40px;
-    /* margin: 0 1%; */
     color: white;
     letter-spacing: 0.2px;
     font-size: 25px;

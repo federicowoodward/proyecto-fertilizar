@@ -94,7 +94,11 @@
         flex-direction: column;
         align-items: center;
         width: auto;
+        margin: 0;
     } 
+    .cardsGroup .card .text {
+        padding: 20px 0;
+    }
     .cardsGroup .card .imgPc {
         display: none;
     }
@@ -105,10 +109,8 @@
     }
     .cardsGroup .card .text{
         text-align: center;
-        padding: 60px 1% 0 1%;
         margin: 0;
     }
-    .cardsGroup .text h2,
     .cardsGroup .text p {
         font-size: 15px;
         padding: 20px 0 0 0;
