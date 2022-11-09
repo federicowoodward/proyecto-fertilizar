@@ -68,6 +68,9 @@
 .navBar .hamburger_fixed {
     position: fixed;
 }
+@media (min-width: 1440px) {
+
+}
 @media (max-width: 950px) {
     .navBar img {
         transform: scale(0.9);
