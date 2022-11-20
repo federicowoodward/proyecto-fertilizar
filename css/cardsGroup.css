@@ -1,121 +1,182 @@
 .cardsGroup {
-    padding: 30px 0 30px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.cardsGroup .card {
-    display: flex;
-    justify-content: space-between;
     justify-content: center;
-    margin: 2.5vh 1em;
-    height: 350px;
-    max-width: 1200px;
-    border-radius:70px;
+    align-items: center;
+    padding: 20px 80px;
+    height: 100%;
+    background-color: var(--color-gray2);
+}
+
+.cardsGroup .card1,
+.cardsGroup .card3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "text img";
+    border-radius: 50px;
     background-color: #fff;
-    box-shadow:
-    2.2px 2.1px 0.9px rgba(0, 0, 0, 0.04),
-    5.2px 4.8px 2.2px rgba(0, 0, 0, 0.03),
-    9.4px 8.7px 3.9px rgba(0, 0, 0, 0.025),
-    15.6px 14.5px 6.4px rgba(0, 0, 0, 0.022),
-    25.7px 23.8px 10.6px rgba(0, 0, 0, 0.018),
-    44.8px 41.6px 18.5px rgba(0, 0, 0, 0.015),
-    97px 90px 40px rgba(0, 0, 0, 0.01)
-  ;
+    margin: 20px 0;
 }
+
+.cardsGroup .card2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "img text";
+    border-radius: 50px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
 .cardsGroup .text {
-    margin: 18px 0 14px 30px;
+    grid-area: text;
+    padding: 20px 20px 20px 50px;
+    margin: auto 0;
 }
-.cardsGroup h2 {
+
+.card2 .text {
+    padding: 20px 50px 20px 20px;
+}
+
+.cardsGroup .text h2 {
     color: var(--color-green);
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 20px;
-    letter-spacing: 1px;
 }
-.cardsGroup p {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.4px;
+
+.cardsGroup .text p {
+    font: 16px 'Noto Sans JP';
 }
+
 .cardsGroup button {
     background-color: var(--color-green);
-    color: white;
-    padding: 4px 10px;
-    margin: 8px 0 0 6px;
-    border: 0;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
     border-radius: 20px;
+    margin: 20px 10px;
 }
-.cardsGroup .card:hover button {
-    transform: scale(1.12);
+.cardsGroup button a {
+    color: #fff;
+    text-decoration: none;
 }
-.cardsGroup .imgPc{ 
-    width: 70%;
+.cardsGroup button strong {
+    font-size: 20px;
+    padding: 15px 25px;
 }
-.cardsGroup .card2 {
-    display: flex;
-    flex-direction: row-reverse;
+
+.cardsGroup button:hover {
+    transform: scale(1.04);
 }
-.cardsGroup .card2 .imgPc{ 
-    border-radius: 35px 0 0 35px;
+
+.cardsGroup .img {
+    grid-area: img;
 }
-.cardsGroup .card .text {
-    padding: 20px 1%;
+
+.cardsGroup .card1 .img img,
+.cardsGroup .card3 .img img {
+    border-radius: 0 50px 50px 0;
+    width: 600px;
+    height: 100%;
 }
-.cardsGroup .card .text p {
-    font-size: 12px;
+
+.cardsGroup .card2 .img img {
+    border-radius: 50px 0 0 50px;
+    width: 600px;
+    height: 100%;
 }
-.cardsGroup #btnBottom {
-    padding: 10px;
-    letter-spacing: 1px;
-    font-size: 15px;
-    margin: 10px 0 10px 0;
+
+@media (max-width: 1100px) {
+    .cardsGroup {
+        padding: 20px 40px;
+    }
+
+    .cardsGroup .text {
+        grid-area: text;
+        padding: 10px 10px 10px 25px;
+    }
+
+    .card2 .text {
+        padding: 10px 25px 10px 10px;
+    }
+
+    .cardsGroup .text h2 {
+        font-size: 20px;
+        color: var(--color-green);
+    }
+
+    .cardsGroup .text p {
+        font: 13px 'Noto Sans JP';
+    }
+
+    .cardsGroup .card1 .img img,
+    .cardsGroup .card3 .img img {
+        width: 500px;
+    }
+
+    .cardsGroup .card2 .img img {
+        width: 500px;
+    }
 }
-.cardsGroup #btnBottom:hover {
-    transform: scale(1.1);
+
+@media (max-width: 850px) {
+    .cardsGroup {
+        padding: 20px 20px;
+    }
+
+    .cardsGroup .card1 .img img,
+    .cardsGroup .card3 .img img {
+        width: 450px;
+    }
+
+    .cardsGroup .card2 .img img {
+        height: 100%;
+    }
 }
-.cardsGroup .imgMobile {
-    display: none;
-}
-@media (max-width: 1020px) {
-    .cardsGroup .card {
-        width: 100%;
-        background-color: #fff;
-        border-radius:0px;
-        box-shadow:
-        0px 0px 0px rgba(0, 0, 0, 0.04),
-        0px 0px 0px rgba(0, 0, 0, 0.03),
-        0px 0px 0px rgba(0, 0, 0, 0.025),
-        0px 0px 0px rgba(0, 0, 0, 0.022),
-        0px 0px 0px rgba(0, 0, 0, 0.018),
-        0px 0px 0px rgba(0, 0, 0, 0.015),
-        0px 0px 0px rgba(0, 0, 0, 0.01)
-        ; 
+
+@media (max-width: 768px) {
+    .cardsGroup {
+        padding: 20px 10px;
+    }
+    .cardsGroup .card1,
+    .cardsGroup .card3,
+    .cardsGroup .card2 {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: auto;
-        margin: 0;
-    } 
+        border-radius: 0;
+        margin: 20px 0;
+    }
     .cardsGroup .card .text {
-        padding: 20px 0;
+        text-align: center;
+        padding: 0;
     }
-    .cardsGroup .card .imgPc {
-        display: none;
+    .cardsGroup .card button {
+        margin: 10px auto;
     }
-    .cardsGroup .imgMobile {
-        display: inline;
-        width: 90%;
+    .cardsGroup .card1 .img img,
+    .cardsGroup .card3 .img img {
+        border-radius: 0;
+        width: 80%;
+    }
+    .cardsGroup .card2 .img img {
+        border-radius: 0;
+        width: 80%;
+    }
+    .cardsGroup .card .img {
         text-align: center;
     }
-    .cardsGroup .card .text{
-        text-align: center;
-        margin: 0;
-    }
-    .cardsGroup .text p {
-        font-size: 15px;
-        padding: 20px 0 0 0;
-    }
-    .cardsGroup #btnBottom {
-        margin: 80px 0 10px 0;
+}
+@media (max-width: 425px) {
+    .cardsGroup .card1 .img img,
+    .cardsGroup .card3 .img img,
+    .cardsGroup .card2 .img img {
+        width: 100%;
     }
 }

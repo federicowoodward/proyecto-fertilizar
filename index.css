@@ -9,6 +9,7 @@
 @import url("./css/footer.css");
 @import url("./css/lastSection.css");
 /* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 
@@ -17,6 +18,7 @@
     margin: 0;
     --color-green: rgb(128, 190, 88);
     --color-gray: rgb(73, 73, 73);
+    --color-gray2: #F3F7F9;
 }
 body {
     overflow-x: hidden;

@@ -1,7 +1,7 @@
 .firstSection {
     text-align: center;
-    padding: 40px 35px 20px 35px;
-    font-family: 'Noto Sans JP', sans-serif;
+    padding: 30px 80px;
+    background-color: var(--color-gray2);
 }
 .firstSection h2 {
     max-width: 50%;
@@ -11,13 +11,13 @@
     font-size: 30px;
 }
 .firstSection p {
-    max-width: 50%;
-    margin: 0 auto;
-    font-size: 13px;
-    letter-spacing: 1px;
-    padding: 0 2%;
+    font: 16px 'Noto Sans JP'; 
+    letter-spacing: 0.2px;
 }
 @media (max-width: 728px) {  
+    .firstSection {
+        padding: 0 10px;
+    }
     .firstSection h2 {
         padding: 10px;
         font-size: 20px;
@@ -34,15 +34,5 @@
     }
     .firstSection p {
         font-size: 20px;
-    }
-}
-@media (max-width: 1020px) {
-    .firstSection p {
-        max-width: 70%;
-    }
-}
-@media (max-width: 425px) {
-    .firstSection p {
-        max-width: 90%;
     }
 }
