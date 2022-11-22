@@ -262,7 +262,32 @@
                 </div>
             </div>
         </div>
+        <button class="go-top-container">
+            <div class="go-top-button">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </button>
+        <script>
+            window.onscroll = function() {
+                if(document.documentElement.scrollTop > 100) {
+                    document.querySelector(".go-top-container")
+                    .classList.add("show")
+                } else {
+                    document.querySelector(".go-top-container")
+                    .classList.remove("show")
+                }
+            }
+
+            document.querySelector(".go-top-container")
+            .addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })
+            })
+        </script>
         <script src="https://kit.fontawesome.com/aa7bdf4ecf.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/5e3aeb96c8.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
