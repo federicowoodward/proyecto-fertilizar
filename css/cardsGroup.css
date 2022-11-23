@@ -144,7 +144,7 @@
 
 @media (max-width: 768px) {
     .cardsGroup {
-        padding: 20px 10px;
+        /* padding: 20px 10px; */
     }
     .cardsGroup .card1,
     .cardsGroup .card3,
@@ -177,6 +177,16 @@
     }
 }
 @media (max-width: 425px) {
+    .cardsGroup {
+        padding: 10px 2px 0 2px;
+    }
+    .cardsGroup .text h2 {
+        padding: 5px 0 5px 0;
+    }
+    
+    .cardsGroup .text p {
+        padding: 5px 0 5px 0;
+    }
     .cardsGroup .card1 .img img,
     .cardsGroup .card3 .img img,
     .cardsGroup .card2 .img img {

@@ -84,4 +84,7 @@
         justify-content: center;
         width: 80%;
     }
+    .cardsGroup2 .cardSection2 {
+        margin-bottom: 10px;
+    }
 }
