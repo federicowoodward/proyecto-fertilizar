@@ -60,7 +60,17 @@
     }
 
     .social Img {
-        height: 2.5vh;
-        margin-right: 0px;
+        height: 16pxvh;
+    }
+    .socialFlex a {
+        margin: 0 5px 0 0;
+    }
+    .social .magnifyingGlass {
+        padding: 0px 6px 0px 56px;
+    }
+    .social .divMagnifyingGlass p {
+        right: 20px;
+        font-size: 10px;
+        letter-spacing: .5px;
     }
 }

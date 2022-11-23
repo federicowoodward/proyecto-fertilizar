@@ -80,7 +80,6 @@
 }
 .navBar .hamburger_fixed {
     position: fixed;
-    margin-right: 65px;
 }
 @media (min-width: 1440px) {
 
