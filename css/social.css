@@ -1,19 +1,23 @@
 .social {
-    /* display: flex; */
-    /* justify-content: center; */
     margin: 0 auto;
     width: 100%;
     --color-gray2: #C4C4C4;
+    background-color: var(--color-gray);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .socialFlex {
     padding: 4px 0;
-    width: 100%;
+    width: 1440px;
     background-color: var(--color-gray);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
 }
 
 .socialFlex a {

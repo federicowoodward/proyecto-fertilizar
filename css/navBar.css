@@ -1,24 +1,37 @@
 .divNavBar {
     background-color:rgb(54, 54, 56);
+    
+    height: 65px;
+    width: 1440px;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 65px;
+    justify-content: flex-end;
+}
+.navBar img {
+    height: 40px;
+    margin-right: 530px
+}
+@media (max-width: 1440px) {
+    .divNavBar {
+        width: 100%;
+    }
+    .navBar img {
+        height: 40px;
+        margin-right: 0px;
+        position: absolute;
+        top: 10px;
+        left: 40px;
+    }
 }
 .navBar {
     background-color:rgb(54, 54, 56);
     height: 65px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
-    position: relative;
-}
-.navBar img {
-    height: 40px;
-    position: absolute;
-    left: 40px;
-    top: 12px;
+    justify-content: center;
 }
 .navBar img:hover {
     transform: scale(1.04);
