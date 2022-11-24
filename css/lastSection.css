@@ -20,6 +20,13 @@
     padding: 6px 25px;
     border-radius:  18px;
     color: var(--color-green);
+    border: 2px solid var(--color-green);
+
+}
+.lastSection button:hover {
+    color: var(--color-gray);
+    border: 2px solid var(--color-gray);
+
 }
 @media (max-width: 767px) {
     .lastSection h2{
