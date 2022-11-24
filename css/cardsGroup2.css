@@ -29,14 +29,15 @@
     padding: 0 20px ;
 }
 .cardsGroup2 img {
-    min-height: 18vh;
-    max-height: 22vh;
+    height: 18vh;
+    /* max-height: 18vh; */
 }
 
 .cardsGroup2 .circleCard p {
     font-family: 'Noto Sans JP', sans-serif;
     letter-spacing: 0.3px;
     font-size: 15px;
+    max-width: 250px;
 }
 
 .cardsGroup2 .cardSection1 .circleCard p {
@@ -52,7 +53,7 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .cardsGroup2 .cardSection1and2 {
         padding: 0;
     }

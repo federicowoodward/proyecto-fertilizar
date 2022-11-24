@@ -1,8 +1,7 @@
 .divNavBar {
     background-color:rgb(54, 54, 56);
-    
     height: 65px;
-    width: 1440px;
+    width: 1250px;
     position: relative;
     display: flex;
     align-items: center;
@@ -10,9 +9,12 @@
 }
 .navBar img {
     height: 40px;
-    margin-right: 530px
+    position: absolute;
+    top: 10px;
+    left: 30px;
+
 }
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
     .divNavBar {
         width: 100%;
     }
@@ -23,7 +25,7 @@
         top: 10px;
         left: 40px;
     }
-}
+} */
 .navBar {
     background-color:rgb(54, 54, 56);
     height: 65px;

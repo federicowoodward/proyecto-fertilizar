@@ -23,7 +23,7 @@
  
 .go-top-button i {
     position: absolute;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
@@ -36,9 +36,9 @@
 }
  
 .show .go-top-button {
-    animation: popup 0.3s ease-in-out;
-    width: 4.6rem;
-    height: 4.6rem;
+    animation: popup .3s ease-in-out;
+    width: 3.5rem;
+    height: 3.5rem;
     z-index: 11;
 }
  
@@ -52,12 +52,12 @@
         height: 0;
     }
     50% {
-        width: 6rem;
-        height: 6rem;
+        width: 4.5rem;
+        height: 4.5rem;
     }
     100% {
-        width: 4.6rem;
-        height: 4.6rem;
+        width: 3.5rem;
+        height: 3.5rem;
     }
 }
 @media (min-width: 1440px) {

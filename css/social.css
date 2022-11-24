@@ -11,7 +11,7 @@
 
 .socialFlex {
     padding: 4px 0;
-    width: 1440px;
+    width: 1200px;
     background-color: var(--color-gray);
     display: flex;
     flex-direction: row;
