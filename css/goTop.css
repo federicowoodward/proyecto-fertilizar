@@ -63,9 +63,9 @@
 @media (min-width: 1440px) {
     .go-top-container {
         position: fixed;
-        left: 80%;
+        left: 90%;
         bottom: 50px;
-        right: 70%;
+        right: 100%;
     }
     .show .go-top-button {
         width: 45px;

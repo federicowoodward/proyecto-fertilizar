@@ -143,9 +143,6 @@
 }
 
 @media (max-width: 768px) {
-    .cardsGroup {
-        /* padding: 20px 10px; */
-    }
     .cardsGroup .card1,
     .cardsGroup .card3,
     .cardsGroup .card2 {
