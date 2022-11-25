@@ -23,7 +23,8 @@
 .contact .divContact h2 {
   margin: 40px 0 20px 0;
   color: var(--color-green);
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1.5px;
   letter-spacing: 2px;
   font-size: 30px;
 }
