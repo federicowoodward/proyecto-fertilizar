@@ -21,6 +21,11 @@
     padding: 0 80px;
     letter-spacing: 0.2px;
 }
+.firstSection iframe {
+    max-width: 1200px;
+    width: 100%;
+    height: 60vh;
+}
 @media (max-width: 728px) {  
     .firstSection {
         padding: 0 10px;

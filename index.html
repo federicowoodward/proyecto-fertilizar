@@ -43,18 +43,24 @@
                         <div class="searchbar-center">
                             <div class="searchbar-input-spacer"></div>
                 
-                            <input type="text" class="searchbar-input" maxlength="2048" name="q" autocapitalize="off" autocomplete="off" title="Search" role="combobox" placeholder="Buscar">
+                            <input type="text" id="inputsearch" class="searchbar-input" maxlength="2048" name="q" autocapitalize="off" autocomplete="off" title="Search" role="combobox" placeholder="Buscar">
                         </div>
                         <ul class="ulResults" id="ulResults">
                         </ul>
                         <script>
-                            let buscador = document.getElementById("buscador");
+                            let buscador = document.getElementById("inputsearch");
                             let ulResults = document.getElementById("ulResults");
-                            buscador.addEventListener("click", function () {
-                                ulResults.classList.toggle("showResults");
-                                let resultado = "<li><a> Resultado 1 </a></li><li><a> Resultado 2 </a></li>"
-                                ulResults.innerHTML = resultado
-                            })
+                            buscador.oninput = function (resultado) {
+                                resultado = `<li><a>${buscador.value}</a></li>` 
+                                if (buscador.value === "") {
+                                    ulResults.innerHTML = ""
+                                    ulResults.className = "ulResults"
+                                } else {
+                                    ulResults.innerHTML = resultado
+                                    ulResults.className = "showResults";
+
+                                }
+                            }
                         </script>
                     </div>
                 </div>
@@ -137,6 +143,7 @@
                 del
                 suelo,</p>
             </div>
+            <iframe src="https://www.youtube.com/embed/kV3zGb44UKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="cardsGroup">
             <div class="card card1">

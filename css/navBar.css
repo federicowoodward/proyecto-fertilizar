@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
-
 .divNavBar {
     background-color: rgb(54, 54, 56);
     height: 80px;
@@ -20,7 +19,7 @@
 
 .navBar {
     background-color: rgb(54, 54, 56);
-    height: 65px;
+    height: 80px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -62,10 +61,10 @@
     width: 5%;
 }
 .navBar ul .an a::before {
-    right: 52%;
+    right: 51%;
 }
 .navBar ul .an a::after {
-    right: 47%;
+    right: 49%;
 }
 .navBar ul .an a:hover::before,
 .navBar ul .an a:hover::after {
